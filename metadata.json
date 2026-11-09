@@ -1,0 +1,6 @@
+{
+  "name": "Masala Pop · Quirky Indo-Modern Store",
+  "description": "Quirky Indo-modern e-commerce store with multi-currency checkout, real-time customer care, admin inventory tracker, and folk-art aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

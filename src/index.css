@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Bricolage Grotesque', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1e1b24;
+    background-color: #faf7f0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bricolage Grotesque', 'Bowlby One', sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Bowlby One', 'Bricolage Grotesque', cursive, sans-serif;
+}
+
+.font-grotesque {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.font-hand {
+  font-family: 'Caveat', cursive, sans-serif;
+}
+
+/* Quirky Pop Sticker style */
+.sticker {
+  border: 2.5px solid #1e1b24;
+  border-radius: 1.25rem;
+  box-shadow: 4px 4px 0 0 #1e1b24;
+  background-color: #ffffff;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sticker-pop {
+  border: 2.5px solid #1e1b24;
+  box-shadow: 4px 4px 0 0 #1e1b24;
+}
+
+.shadow-pop {
+  box-shadow: 4px 4px 0 0 #1e1b24;
+}
+
+.shadow-pop-sm {
+  box-shadow: 2px 2px 0 0 #1e1b24;
+}
+
+.shadow-pop-lg {
+  box-shadow: 6px 6px 0 0 #1e1b24;
+}
+
+.wiggle-hover:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 6px 6px 0 0 #1e1b24;
+}
+
+/* Marquee infinite scroll */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Retro Cinema Marquee Bulbs pattern */
+.marquee-bulbs {
+  background-image: radial-gradient(#fbbf24 35%, transparent 40%);
+  background-size: 14px 14px;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
